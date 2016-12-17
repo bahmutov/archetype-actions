@@ -15,6 +15,7 @@ describe('Archetype actions', () => {
       }
     })
     const add1 = addTodo({text: 'do something'})
+    // const add1 = addTodo({what: 'do something'})
     la(is.object(add1))
     la(add1.type === 'ADD_TODO')
     la(add1.text === 'do something')
